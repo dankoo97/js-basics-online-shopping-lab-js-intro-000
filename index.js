@@ -57,6 +57,9 @@ function placeOrder(cardNumber) {
     return "Sorry, we don't have a credit card on file for you."
   }
   var totalPrice = total()
+
+  var cartSize = cart.length
+  
   while (cart.length != 0) {
     removeFromCart(cart[0])
   }
