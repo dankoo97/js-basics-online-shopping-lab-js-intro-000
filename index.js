@@ -60,7 +60,7 @@ function placeOrder(cardNumber) {
 
   var cartSize = cart.length
 
-  while (cart.length != 0) {
+  while (cartSize != 0) {
     removeFromCart(cart[0])
   }
 
