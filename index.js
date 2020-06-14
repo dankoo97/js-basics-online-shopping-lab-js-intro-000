@@ -17,17 +17,18 @@ function addToCart(item) {
 
 function viewCart() {
   var cartItems = "In your cart, you have "
-  switch (cart.length) {}
+  switch (cart.length) {
     case(0) :
       return "Your shopping cart is empty."
     case(1) :
       return cartItems + `${cart[0].itemName} at $${cart[0].itemPrice}.`
     case(2) :
       return cartItems + `${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`
-    for (let i = 0; i < cart.length-1; i++) {
-      cartItems+=`${cart[i].itemName} at $${cart[i].itemPrice}, `
-    }
-    return cartItems + `and ${cart[cart.length-1].itemName} at $${itemPrice}.`
+    default :
+      for (let i = 0; i < cart.length-1; i++) {
+        cartItems+=`${cart[i].itemName} at $${cart[i].itemPrice}, `
+      }
+      return cartItems + `and ${cart[cart.length-1].itemName} at $${itemPrice}.`
   }
 }
 
