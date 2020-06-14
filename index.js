@@ -53,7 +53,9 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  if type(cardNumber) === 'undefined'
+  if (type(cardNumber) === 'undefined') {
+    return "Sorry, we don't have a credit card on file for you."
+  }
   var totalPrice = total()
   while (cart.length != 0) {
     removeFromCart(cart[0])
