@@ -58,8 +58,9 @@ function placeOrder(cardNumber) {
   }
   var totalPrice = total()
 
-  for (let i = 0; i < cart.length; i++) {
-    removeFromCart(cart[0])
+  
+  while (cart.length != 0) {
+    removeFromCart(cart[0].itemName)
   }
 
   return `Your total cost is $${totalPrice}, which will be charged to the card ${cardNumber}.`
