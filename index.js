@@ -44,7 +44,7 @@ function removeFromCart(item) {
   for (let i = 0; i < cart.length; i ++) {
     if (item === cart[i].itemName) {
       cart.pop(item)
-      return cart
+      return [...cart.splice(0,i)]
     }
   }
 
