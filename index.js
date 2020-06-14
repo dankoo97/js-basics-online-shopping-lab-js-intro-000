@@ -22,8 +22,8 @@ function viewCart() {
       return "Your shopping cart is empty."
     case(1) :
       return cartItems + `${cart[0].itemName} at $${cart[0].itemPrice}.`
-    case(2) :
-      return cartItems + `${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`
+    // case(2) :
+    //   return cartItems + `${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`
     default :
       for (let i = 0; i < cart.length-1; i++) {
         cartItems+=`${cart[i].itemName} at $${cart[i].itemPrice}, `
