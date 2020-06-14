@@ -20,9 +20,8 @@ function viewCart() {
   switch (cart.length) {}
     case(0) :
       return "Your shopping cart is empty."
-    case(1)
-
-    switch (cart)
+    case(1) :
+      return cartItems + `${cart[0].itemName} at $${cart[0].itemPrice}`
     for (let i = 0; i < cart.length-1; i++) {
       cartItems+=`${cart[i].itemName} at $${cart[i].itemPrice}, `
     }
