@@ -62,6 +62,7 @@ function placeOrder(cardNumber) {
 
   while (cartSize != 0) {
     removeFromCart(cart[0])
+    cartSize --
   }
 
   return `Your total cost is $${totalPrice}, which will be charged to the card ${cardNumber}.`
