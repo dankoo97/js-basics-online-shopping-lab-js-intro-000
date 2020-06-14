@@ -40,13 +40,16 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var removedItem = "That item is not in your cart."
+  var removedItem = 
   for (let i = 0; i < cart.length; i ++) {
     if (item === cart[i].itemName) {
       cart.pop(item)
       return cart
     }
   }
+
+  return "That item is not in your cart."
+  
 }
 
 function placeOrder(cardNumber) {
