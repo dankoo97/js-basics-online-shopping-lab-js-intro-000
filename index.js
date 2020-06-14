@@ -54,4 +54,7 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   var totalPrice = total()
+  while (cart.length != 0) {
+    removeFromCart(cart[0])
+  }
 }
